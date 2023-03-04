@@ -1,0 +1,66 @@
+{
+  // These tasks will run in order when initializing your CodeSandbox project.
+  "setupTasks": [
+    {
+      "name": "Install Dependencies",
+      "command": "yarn install"
+    }
+  ],
+
+  // These tasks can be run from CodeSandbox. Running one will open a log in the app.
+  "tasks": {
+    "build:css": {
+      "name": "build:css",
+      "command": "yarn build:css",
+      "runAtStart": false
+    },
+    "watch:css": {
+      "name": "watch:css",
+      "command": "yarn watch:css",
+      "runAtStart": false
+    },
+    "env:dev": {
+      "name": "env:dev",
+      "command": "yarn env:dev",
+      "runAtStart": false
+    },
+    "env:prod": {
+      "name": "env:prod",
+      "command": "yarn env:prod",
+      "runAtStart": false
+    },
+    "react-scripts:start": {
+      "name": "react-scripts:start",
+      "command": "yarn react-scripts:start",
+      "runAtStart": false
+    },
+    "react-scripts:build": {
+      "name": "react-scripts:build",
+      "command": "yarn react-scripts:build",
+      "runAtStart": false
+    },
+    "start": {
+      "name": "start",
+      "command": "yarn start",
+      "runAtStart": true,
+      "preview": {
+        "port": 3000
+      }
+    },
+    "build": {
+      "name": "build",
+      "command": "yarn build",
+      "runAtStart": false
+    },
+    "test": {
+      "name": "test",
+      "command": "yarn test",
+      "runAtStart": false
+    },
+    "eject": {
+      "name": "eject",
+      "command": "yarn eject",
+      "runAtStart": false
+    }
+  }
+}
